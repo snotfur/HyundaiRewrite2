@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +11,20 @@ body {
     color: #333;
 }
 
+/* Header & Navigation Styling */
 header {
     background-color: #003a70;
-    color: white;
     padding: 20px;
-    text-align: center;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -35,7 +37,56 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main {
-    padding: 20px;
+/* Hero Section */
+#hero {
     text-align: center;
+    padding: 50px;
+    background-color: #e5e5e5;
+}
+
+#hero h1 {
+    color: #003a70;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Top bar styling */
+.navbar-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.top-bar {
+    background-color: #003a70;
+    padding: 15px 0;
+}
+
+.top-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar ul li {
+    margin: 0 20px;
+}
+
+.top-bar ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.top-bar ul li a:hover {
+    background-color: #005bb5;
+    border-radius: 5px;
 }
